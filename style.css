@@ -141,13 +141,14 @@ p.titre {
     right: 0; /* Ajouté */
     top: 0; /* Ajouté */
     z-index: 1; /* Ajouté */
+    width: 50%; 
 }
-
 .right-content2 img {
-    max-width: 900%;
-    height: auto;
+    max-width: 100%;  /* Ajuste la largeur maximale à celle du conteneur parent */
+    height: auto;     /* Conserve les proportions de l'image */
     border-radius: 5px;
 }
+
 
 .btn-devis {
     display: inline-block;
