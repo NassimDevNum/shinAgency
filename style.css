@@ -1,0 +1,250 @@
+h1{
+    color: #29ABB7;
+    font-family: 'Kalam', cursive;
+    margin: 0px 120px 0px 120px;
+}
+p{
+    color: #575757;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 120px 0px 120px;
+}
+
+
+.checked {
+    color: orange;
+  }
+  
+  .card-contents {
+    position: relative;
+}
+.card-description {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px; 
+    right: 10px; 
+    padding: 5px; 
+    color: white;
+}
+.card-description p {
+    text-align: left;
+    margin: 0;   /* Réinitialisez les marges */
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap; 
+    margin: 0px 120px 0px 120px;
+}
+
+
+/* partie 2*/
+.custom-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    align-items: start;
+}
+
+.left-content {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+.speimg
+{
+    text-align: center;
+}
+.left-content img {
+    /* max-width: 100%;
+    height: auto; */
+    max-width: 100%;
+    /* Suppose que c'est la marge de l'image. À ajuster selon vos besoins. */
+
+}
+
+.left-content{
+    position: relative;
+}
+.left-content p {
+    margin-top: 10px;
+}
+
+
+/* contenue droite*/
+.right-content {
+    flex: 1;
+    padding-left: 20px;
+}
+.right-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.right-content li {
+    display: flex;
+    align-items: start; /* Centrer verticalement en fonction du contenu le plus haut */
+    margin-bottom: 20px; /* Espace entre chaque élément de la liste */
+}
+
+.right-content i {
+    font-size: 120px; /* Taille de l'icône */
+    margin-right: 15px; /* Espace entre l'icône et le contenu texte */
+    color: #29ABB7;
+    background-color: rgba(41, 171, 183, 0.2);
+}
+
+.text-content {
+    display: inline-block;
+} 
+p.titre {
+    color: #29ABB7;
+    font-size: 25px;
+}
+
+
+/* devis*/ 
+
+.devis-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    position: relative; /* Ajouté */
+    height: 100vh; /* Ajouté - définissez la hauteur selon vos besoins */
+
+}
+
+.left-content2 {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;  /* Pour aligner le texte à gauche */
+    background-color: #29ABB7;
+    height: 40%; /* Ajouté */
+    color: #FFFFFF;
+    z-index: 1;
+    margin-right: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    position: relative; 
+    border-radius: 3px;
+}
+
+.right-content2 {
+    flex: 1;
+    padding-left: 20px;
+    text-align: right; /* Pour que l'image soit alignée à droite */
+    position: absolute; /* Ajouté */
+    right: 0; /* Ajouté */
+    top: 0; /* Ajouté */
+    z-index: 1; /* Ajouté */
+}
+
+.right-content2 img {
+    max-width: 900%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn-devis {
+    display: inline-block;
+    background-color: #29ABB7; /* Bleu par défaut, changez selon vos préférences */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: solid 3px #fff;
+    text-decoration: none;
+    margin-top: 10px;  /* Espace entre le paragraphe et le bouton */
+    transition: background-color 0.3s ease; /* Pour un effet de survol doux */
+    width:190px;
+    margin-left:10%;
+}
+
+.btn-devis:hover {
+    background-color: white; /* Couleur de fond au survol */
+    color: #29ABB7;
+}
+.textD{
+    position:relative;
+}
+
+.c1 
+{
+    content: "";
+    position: absolute;
+    bottom: -185px;
+    right: 767px;
+    width: 150px;
+    height: 150px;
+    background-color: none;
+    border-radius: 50%;
+    border: solid 8px #fff;
+    position: relative; /* Ajout de la position relative pour que z-index fonctionne */
+    z-index: 2; /* Donnez-lui une valeur supérieure à celle de votre image */
+
+}
+.c2 
+{
+    content: "";
+    position: absolute;
+    bottom: -153px;
+    right: 840px;
+    width: 150px;
+    height: 150px;
+    background-color: none;
+    border-radius: 50%;
+    border: solid 8px #fff;
+    position: relative; /* Ajout de la position relative pour que z-index fonctionne */
+    z-index: 2; /* Donnez-lui une valeur supérieure à celle de votre image */
+
+}
+
+/* section*/
+.imgMylist
+{
+    text-align: center;
+    margin-top: -345px;
+}
+.horizontal-container {
+    display: flex;
+    justify-content: center;  /* Centrer horizontalement */
+}
+
+.horizontal-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;   /* Pour que les éléments s'alignent horizontalement */
+    gap: 20px;             /* Espacement entre les éléments */
+}
+.horizontal-list .fa {
+    font-size: 50px;  /* Ajustez cette valeur selon la taille souhaitée */
+    vertical-align: middle;  /* Aligne verticalement l'icône avec le texte */
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 35px;
+    color: #29ABB7;
+    background-color: rgba(41, 171, 183, 0.2);
+}
+
+.btnFin {
+    text-align: center;
+}
+.btn-fin {
+    
+    display: inline-block;
+    background-color: #fff; /* Bleu par défaut, changez selon vos préférences */
+    color: #575757;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: solid 3px #29ABB7;
+    text-decoration: none;
+    margin-top: 10px;  /* Espace entre le paragraphe et le bouton */
+    transition: background-color 0.3s ease; /* Pour un effet de survol doux */
+    width:190px;
+    margin-left:10%;
+    
+}
